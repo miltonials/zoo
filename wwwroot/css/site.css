@@ -1,0 +1,71 @@
+:root {
+  --main-bg-color: #002c00;
+  --secondary-bg-color: #388e00;
+  --hover: #0b4606;
+  --default-text-color: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  text-decoration: none;
+  background-color: var(--main-bg-color);
+  color: var(--default-text-color);
+}
+
+html {
+  font-size: 62.5%
+}
+
+header {
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+.header-nav-container ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 768px;
+  border-bottom: 1px solid var(--secondary-bg-color);
+}
+
+.header-nav-container ol li {
+  display: flex;
+  margin: 0.5rem 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2rem;
+  padding: 0px 10px;
+  background-color: transparent;
+  
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-text-color);
+  background-color: transparent;
+  width:100%;
+  height:100%
+}
+
+.header-nav-container ol li:hover {
+  background-color: var(--hover);
+  border-radius: 3rem;
+  filter: hue-rotate(34deg);
+  transition: all 0.4s linear;
+}
