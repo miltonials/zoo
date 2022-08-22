@@ -4,13 +4,13 @@
 
 <main>
   <section class="form-container">
-    <form class="form">
+    <form class="form" method="post">
       <label id="title-form">Datos del zoológico</label>
-      <input type="text" id="zooName" placeholder="Nombre del zoológico">
-      <input type="text" id="countryName" name="lname" placeholder="País del zoológico">
-      <input type="text" id="cellphoneNumber" name="lname" placeholder="Escriba aquí">
-      <input type="text" id="website" name="lname" placeholder="Sitio web">
-      <button id="form-btn">Registrar</button>
+      <input type="text" id="zooName" name="name" placeholder="Nombre">
+      <input type="text" id="countryName" name="country" placeholder="País">
+      <input type="text" id="cellphoneNumber" name="cellphone" placeholder="Número de teléfono">
+      <input type="text" id="website" name="website" placeholder="Sitio web">
+      <button id="form-btn" asp-controller="Home" asp-action="Registered">Registrar</button>
     </form>
   </section>
 </main>
