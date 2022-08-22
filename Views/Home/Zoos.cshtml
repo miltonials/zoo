@@ -1,6 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Información";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+@foreach (Zoo zoo in Model.zoos)
+{
+    @* design here🌈🌈🌈🌈 *@
+    <h1 style="color: var(--secundary-color);"> @zoo.showInfo() </h1>
+}

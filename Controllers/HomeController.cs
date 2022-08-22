@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using zoo.Models;
+using database.Models;
 
 namespace zoo.Controllers;
 
@@ -20,7 +21,9 @@ public class HomeController : Controller
 
   public IActionResult Zoos()
   {
-    return View();
+    Database database = new Database();
+    
+    return View("zoos", database);
   }
 
   [HttpPost]
