@@ -1,9 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Información";
 }
+@model List<Zoo>
 
-@foreach (Zoo zoo in Model.zoos)
+@foreach (var zoo in Model)
 {
-    @* design here🌈🌈🌈🌈 *@
-    <h1 style="color: var(--secundary-color);"> @zoo.showInfo() </h1>
+    <partial name="ZooInfo" model="zoo" />
 }

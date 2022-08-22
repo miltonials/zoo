@@ -23,7 +23,7 @@ public class HomeController : Controller
   {
     Database database = new Database();
     
-    return View("zoos", database);
+    return View(database.zoos);
   }
 
   [HttpPost]
