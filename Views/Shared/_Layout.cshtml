@@ -10,16 +10,17 @@
 </head>
 
 <body>
+    <img src="https://cdn.pixabay.com/photo/2019/07/27/06/21/giraffe-4366005_960_720.jpg">
     <header>
         <nav class="header-nav-container">
             <ol>
                 <li>
-                    <a href="#">
+                    <a asp-area="" asp-controller="Home" asp-action="Index">
                         🏠 Inicio
                     </a>
                 </li>
                 <li class="cd">
-                    <a href="#">
+                    <a asp-area="" asp-controller="Home" asp-action="Zoos">
                         🐅 Zoológicos registrados
                     </a>
                 </li>
@@ -29,9 +30,6 @@
     <main>
         @RenderBody()
     </main>
-    <footer>
-        &copy; 2022 - zoo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </footer>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
