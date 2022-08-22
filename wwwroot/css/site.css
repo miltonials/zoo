@@ -83,6 +83,13 @@ main {
   font-size: 2rem;
 }
 
+.info-container {
+  /* flex-direction: column; */
+  border: 1px solid gray;
+  margin: .5rem;
+  padding: .5rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -123,4 +130,15 @@ label {
 #form-btn:hover {
   filter: brightness(3);
   transition: all 0.4s linear;
+}
+
+
+@media screen and (max-width: 767px) {
+  img {
+    display: none;
+  }
+
+  html {
+    background-color: var(--secondary-color);
+  }
 }
